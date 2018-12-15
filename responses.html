@@ -1,0 +1,85 @@
+<html><head><title>One Click Communication</title>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>	
+	<!-- jQuery (required) & jQuery UI + theme (optional) -->
+	<link href="https://mottie.github.io/Keyboard/docs/css/jquery-ui.min.css" rel="stylesheet">
+	<!-- still using jQuery v2.2.4 because Bootstrap doesn't support v3+ -->
+	<script src="https://mottie.github.io/Keyboard/docs/js/jquery-latest.min.js"></script>
+	<script src="https://mottie.github.io/Keyboard/docs/js/jquery-ui.min.js"></script>
+	<!-- <script src="https://mottie.github.io/Keyboard/docs/js/jquery-migrate-3.0.0.min.js"></script> -->
+
+	<!-- keyboard widget css & script (required) -->
+	<link href="https://mottie.github.io/Keyboard/css/keyboard.css" rel="stylesheet">
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.js"></script>
+
+	<!-- keyboard extensions (optional) -->
+	<script src="https://mottie.github.io/Keyboard/js/jquery.mousewheel.js"></script>
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-typing.js"></script>
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-autocomplete.js"></script>
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-caret.js"></script>
+
+	<!-- demo only -->
+	<!-- <link rel="stylesheet" href="https://mottie.github.io/Keyboard/docs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://mottie.github.io/Keyboard/docs/css/font-awesome.min.css">
+	<link href="https://mottie.github.io/Keyboard/docs/css/demo.css" rel="stylesheet">
+	<link href="https://mottie.github.io/Keyboard/docs/css/tipsy.css" rel="stylesheet">
+	<link href="https://mottie.github.io/Keyboard/docs/css/prettify.css" rel="stylesheet"> -->
+	<script src="https://mottie.github.io/Keyboard/docs/js/bootstrap.min.js"></script>
+	<script src="https://mottie.github.io/Keyboard/docs/js/demo.js"></script>
+	<script src="https://mottie.github.io/Keyboard/docs/js/jquery.tipsy.min.js"></script>
+	<script src="https://mottie.github.io/Keyboard/docs/js/prettify.js"></script> <!-- syntax highlighting -->
+</head>
+<body bgcolor="#000000" text="#ffffff">
+<table width="100%">
+<tr><td colspan=5><center>I need assistance</center></td>
+</tr><tr>
+<td>
+<table width=25%>
+<tr width=25%><td colspan=3><center>Responses:<center></td></tr>
+<tr><td><input onclick='responsiveVoice.speak("Yes");' type='button' value='Yes' /></td>
+<td><input onclick='responsiveVoice.speak("No");' type='button' value='No' /></td>
+<td><input onclick='responsiveVoice.speak("I dont know");' type='button' value='idk' /></td>
+</tr></table>
+</td>
+<td>
+<table width=25%>
+<tr width=25%><td colspan=4><center>Bio:<center></td></tr>
+<tr><td><input onclick='responsiveVoice.speak("I need to pee");' type='button' value='Pee' /></td>
+<td><input onclick='responsiveVoice.speak("I need to poo");' type='button' value='Poo' /></td>
+<td><input onclick='responsiveVoice.speak("I am hungry");' type='button' value='hungry' /></td>
+<td><input onclick='responsiveVoice.speak("I am thirsty");' type='button' value='thirsty' /></td>
+</tr></table>
+</td>
+<td>
+<table width=25%>
+<tr width=25%><td colspan=3><center>Comfort:<center></td></tr>
+<tr><td><input onclick='responsiveVoice.speak("I am cold");' type='button' value='Cold' /></td>
+<td><input onclick='responsiveVoice.speak("I am hot");' type='button' value='Hot' /></td>
+<td><input onclick='responsiveVoice.speak("I am not comfortable");' type='button' value='uncomfortable' /></td>
+</tr></table>
+</td>
+<td>
+<table width=25%>
+<tr width=25%><td colspan=5><center>Frequent Pain:<center></td></tr>
+<tr><td><input onclick='responsiveVoice.speak("I have a headache");' type='button' value='Headache' /></td>
+<td><input onclick='responsiveVoice.speak("I am having kidney pain");' type='button' value='Kidney Stones' /></td>
+<td><input onclick='responsiveVoice.speak("I am having stomach pain");' type='button' value='IBS Pain' /></td>
+<td><input onclick='responsiveVoice.speak("I am having back pain");' type='button' value='Back Pain' /></td>
+<td><input onclick='responsiveVoice.speak("I am short of breath");' type='button' value='Short of Breath' /></td>
+</tr></table>
+</td>
+<td>
+<table width=25%>
+<tr width=25%><td colspan=3><center>Alert:<center></td></tr>
+<tr><td><input onclick='responsiveVoice.speak("Help");' type='button' value='Help' /></td>
+<td><input onclick='responsiveVoice.speak("I need help");' type='button' value='Need Help' /></td>
+<td><input onclick='responsiveVoice.speak("Emergency");' type='button' value='Emergency' /></td>
+</tr></table>
+</td>
+<tr><td>
+</tr></table><br><br>
+<div class="block" id="autocomplete">
+Type A Message:
+<input id="text" size="25" type="text" placeholder=" Enter something...">
+<input onclick='responsiveVoice.speak(text.value);' type='button' value='Speak' />
+</div>
+</html>
